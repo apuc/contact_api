@@ -24,9 +24,11 @@ use yii\helpers\Html; ?>
                 Зайдите в  раширение RestMan. Выберете из выпадающего списка метод передачи данных "GET". <br>
                 Вставте в строку поиска запрос вида: <br> https://contact-api.craft-group.xyz/contacts?ContactsSearch[name]=Иван <br>
                 Нажмите на <?= Html::img('/uploads/arrow.png', ['width' => '30',]) ?> для выполнения запроса.<br>
+                В блоке response на вкладке body появится ответ. <br>
                 Запрос из премера вернет записи из базы в которых name = Иван. <br>
                 Можно осуществлять поиск по name, email и phone. <br>
-                В блоке response на вкладке body появится ответ. <br><br>
+                Для получения всех пользователей выполните запрос: <br>
+                https://contact-api.craft-group.xyz/contacts <br><br>
                 <?= Html::img('/uploads/get.png', ['width' => '550',]) ?>
             </div>
             <div class="col-lg-6">
