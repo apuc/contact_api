@@ -7,20 +7,19 @@ $this->title = 'Contacts API';
 use yii\helpers\Html; ?>
 <div class="site-index">
 
-    <h3>Инструкция по использованию:</h3>
-    <p class="lead">Развертывание и настройка Yii </p>
-    <p>
-        Клонировать прект из репозитория. <br>
-        В консоли зайти в корень проекта, и выполнить следующие команды: <br>
-        1. composer install <br>
-        2. php init <br>
-        3. yii migrate <br>
-    </p>
-    <p class="lead">Установите расширение для браузера RestMan.</p>
-
     <div class="body-content">
         <div class="row">
             <div class="col-lg-6">
+                <h3>Инструкция по использованию:</h3>
+                <p class="lead">Развертывание и настройка Yii </p>
+                <p>
+                    Клонировать проект из репозитория. <br>
+                    В консоли зайти в корень проекта, и выполнить следующие команды: <br>
+                    1. composer install <br>
+                    2. php init <br>
+                    3. yii migrate <br>
+                </p>
+                <p class="lead">Установите расширение для браузера RestMan.</p>
                 <p class="lead">Поиск данных</p>
                 Выберете из выпадающего списка метод передачи данных "GET". <br>
                 Вставте в строку поиска запрос вида: <br> http://yii2.advanced/contacts?ContactsSearch[name]=Иван <br>
@@ -35,6 +34,23 @@ use yii\helpers\Html; ?>
                 Выберете из выпадающего списка метод передачи данных "POST". <br>
                 Вставте в строку поиска запрос: <br> http://yii2.advanced/contacts/create <br>
                 В блоке response на вкладке raw вставте данные в формате JSON. <br>
+                Пример данных: <br>
+                <pre>
+                    {
+                    "source_id": 1,
+                    "items": [
+                    {
+                        "name": "Анна",
+                        "email": "mail1@gmail.com",
+                        "phone": 9001234457
+                    },
+                    {
+                        "name": "Иван",
+                        "email": "mail2@gmail.com",
+                        "phone": "+79001234823"
+                    }]
+                    }
+                </pre>
                 Нажмите на <?= Html::img('/uploads/arrow.png', ['width' => '30',]) ?> для выполнения запроса.<br>
                 В блоке response на вкладке body появится результат - количество записей добаленных в базу данных. <br>
                 <?= Html::img('/uploads/post.png', ['width' => '550',]) ?>
