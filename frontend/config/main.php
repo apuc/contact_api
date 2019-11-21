@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
+    'name' => 'Contacts API',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'modules' => [
@@ -45,10 +46,10 @@ return [
 
         'urlManager' => [
             'enablePrettyUrl' => true,
-//            'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-        //        ['class' => 'yii\rest\UrlRule', 'controller' => 'contacts/contacts'],
+                'contacts' => 'contacts/contacts/index',
+                'contacts/create' => 'contacts/contacts/create',
             ],
         ],
 

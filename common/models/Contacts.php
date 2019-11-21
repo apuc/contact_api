@@ -57,7 +57,6 @@ class Contacts extends \yii\db\ActiveRecord
             [['source_id'], 'integer'],
             [['created_at'], 'safe'],
             [['name', 'email'], 'string', 'max' => 100],
-            [['phone'], 'string', 'max' => 30],
             [
                 ['source_id'],
                 'exist',

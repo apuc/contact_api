@@ -28,7 +28,6 @@ class ContactsController extends ActiveController
 
     public function prepareDataProvider()
     {
-
         $searchModel = new \common\models\ContactsSearch();
         return $searchModel->search(\Yii::$app->request->queryParams);
     }
@@ -46,7 +45,6 @@ class ContactsController extends ActiveController
         $i = 0;
         $source = Source::find()->where(['id' => $arr->source_id])->all();
         if ($source) {
-
             foreach ($arr->items as $item) {
                 $contact = new Contacts();
                 $contact->name = $item->name;
@@ -58,13 +56,13 @@ class ContactsController extends ActiveController
                     $i++;
             }
         }
+
         return ['count' => $i];
     }
 
     public function Show()
     {
         $params = Yii::$app->request->get();
-//        Debug::dd($params);
         $contactSearch = new ContactsSearch();
         $contactSearch->search($params);
     }
