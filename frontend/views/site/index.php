@@ -21,8 +21,8 @@ use yii\helpers\Html; ?>
                 </p>
                 <p class="lead">Установите расширение для браузера RestMan.</p>
                 <p class="lead">Поиск данных</p>
-                Выберете из выпадающего списка метод передачи данных "GET". <br>
-                Вставте в строку поиска запрос вида: <br> http://yii2.advanced/contacts?ContactsSearch[name]=Иван <br>
+                Зайдите в  раширение RestMan. Выберете из выпадающего списка метод передачи данных "GET". <br>
+                Вставте в строку поиска запрос вида: <br> https://contact-api.craft-group.xyz/contacts?ContactsSearch[name]=Иван <br>
                 Нажмите на <?= Html::img('/uploads/arrow.png', ['width' => '30',]) ?> для выполнения запроса.<br>
                 Запрос из премера вернет записи из базы в которых name = Иван. <br>
                 Можно осуществлять поиск по name, email и phone. <br>
@@ -31,8 +31,8 @@ use yii\helpers\Html; ?>
             </div>
             <div class="col-lg-6">
                 <p class="lead">Запись данных</p>
-                Выберете из выпадающего списка метод передачи данных "POST". <br>
-                Вставте в строку поиска запрос: <br> http://yii2.advanced/contacts/create <br>
+                Зайдите в  раширение RestMan. Выберете из выпадающего списка метод передачи данных "POST". <br>
+                Вставте в строку поиска запрос: <br> https://contact-api.craft-group.xyz/contacts/create <br>
                 В блоке response на вкладке raw вставте данные в формате JSON. <br>
                 Пример данных: <br>
                 <pre>
