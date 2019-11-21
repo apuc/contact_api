@@ -9,6 +9,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
+Yii::$app->controller->layout = 'main-login';
 ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
